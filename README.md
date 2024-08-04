@@ -20,27 +20,42 @@ SmartAssistant is an AI-powered Flutter application designed to respond to user 
 - **ML Model:** For camera object recognition.
 - **OpenAI Model:** For generating responses to user inquiries.
 
+ 
 ## Getting Started 🚀
 
 To get a local copy of this project up and running, follow these steps:
 
-1. **Clone the repository:**
+1. *Clone the repository:*
 
-   ```bash
+   bash
    git clone https://github.com/tawafmesar/SmartAssistant.git
-   ```
+   
 
-2. **Set up the backend:**
+2. *Set up the backend:*
    - Navigate to the backend scripts provided in the repository:
 
-     ```bash
-     https://github.com/tawafmesar/SmartAssistantBackend.git
-     ```
+     bash
+     https://github.com/tawafmesar/SmartAssistantBackend.git     
 
    - Configure your PHP environment to host the backend scripts.
    - Import the MySQL database schema provided in the [php/id21735724_smart.sql](https://github.com/tawafmesar/SmartAssistantBackend/blob/main/database/id21735724_smart.sql).
 
-3. **Run the Flutter application:**
+3. *Run the Flutter application:*
    - Open the project in your preferred Flutter IDE.
    - Connect the Flutter app to your configured backend endpoints.
 
+4. *Set up the OpenAI API key:*
+   - Obtain an API key from OpenAI by signing up on their [website](https://platform.openai.com/signup).
+   - Open the file [lib/core/services/api_service.dart](https://github.com/tawafmesar/SmartAssistant/blob/main/lib/core/services/api_service.dart).
+   - Replace the placeholder *************************************************** with your actual OpenAI API key:
+
+     dart
+     String API_KEY = "your_actual_openai_api_key_here";
+
+## Contributing 🤝
+
+Contributions are welcome! Please fork the repository and submit a pull request with your changes.
+
+## License 📄
+
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
